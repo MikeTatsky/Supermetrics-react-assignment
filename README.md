@@ -5,6 +5,9 @@ Open [https://supermetrics-react-assignment.vercel.app](https://supermetrics-rea
 ## Screenshot 
 ![app](https://user-images.githubusercontent.com/1744857/201522730-42fd7acf-c92e-4404-9ae9-60cc7cc81bb6.png)
 
+## Original Assignment repo
+[https://github.com/supermetrics-public/react-assignment](https://github.com/supermetrics-public/react-assignment)
+
 ## Available Scripts
 
 In the project directory, you can run:
