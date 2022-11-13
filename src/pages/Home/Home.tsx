@@ -20,18 +20,18 @@ import styles from './Home.module.scss'
 const URL_GET_POSTS = 'https://api.supermetrics.com/assignment/posts'
 
 function preparePosts (posts: IPost[]): [string[], IPost[][]] {
-  const usersWithPosts: {
-    [key: string]: IPost[]
-  } = {}
+  const usersWidthPosts = new Map<string, IPost[]>()
 
   posts.forEach(post => {
-    usersWithPosts[post.from_name] ||= []
-    usersWithPosts[post.from_name].push(post)
+    const userPosts = usersWidthPosts.get(post.from_name) ?? []
+    userPosts.push(post)
+    usersWidthPosts.set(post.from_name, userPosts)
   })
 
-  const userNames: string[] = Object.keys(usersWithPosts).sort()
+  const userNames: string[] = Array.from(usersWidthPosts.keys()).sort()
+
   const sortedPosts = userNames.map(userName => {
-    return usersWithPosts[userName]
+    return usersWidthPosts.get(userName) as IPost[]
   })
 
   return [userNames, sortedPosts]

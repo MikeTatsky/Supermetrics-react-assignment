@@ -24,7 +24,7 @@ class UsersStore {
     const foundIndexes: number[] = []
 
     return this.users.reduce((acc, userName, index) => {
-      if (new RegExp(value).test(userName)) {
+      if (new RegExp(value.toLocaleLowerCase()).test(userName.toLocaleLowerCase())) {
         acc.push(index)
       }
 

@@ -2,7 +2,7 @@ import { action, makeObservable, observable } from 'mobx'
 
 import commonStore from 'stores/commonStore'
 
-import { IPost } from '../pages/Home/components/Posts/Post'
+import { IPost } from 'pages/Home/components/Posts/Post'
 
 class PostsStore {
   constructor () {
@@ -31,7 +31,7 @@ class PostsStore {
     }
 
     return this.postsByUsers[commonStore.selectedUserIndex].reduce((acc: string[], post: IPost) => {
-      if (new RegExp(value).test(post.message)) {
+      if (new RegExp(value.toLocaleLowerCase()).test(post.message.toLocaleLowerCase())) {
         foundPostIds.push(post.id)
       }
 
