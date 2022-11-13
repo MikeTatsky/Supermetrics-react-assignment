@@ -2,14 +2,14 @@
 
 .container {
   font-family: $font-family;
-  background: hsl(0,0%,99%);
+  background: $bg-color-5;
   height: 100%;
 }
 
 .header {
   position: absolute;
   width: 100%;
-  box-shadow: rgb(0 0 0 / 3%) 0 2px 0 0;
+  box-shadow: $box-shadow-3;
   margin-left: 5px;
   margin-right: 5px;
   box-sizing: border-box;
@@ -41,7 +41,7 @@
   width: 1px;
   margin-right: 0.25rem;
   margin-left: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: $bg-color-6;
   margin-top: 3px;
 }
 

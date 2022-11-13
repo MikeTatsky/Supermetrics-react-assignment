@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #F5F5F5;
+  background: $bg-color-2;
 }
 
 .light-scrollbar::-webkit-scrollbar {
@@ -26,12 +26,12 @@ body {
 }
 
 .light-scrollbar::-webkit-scrollbar-thumb {
-  background-color: hsla(0,0%,0%,0.35);
+  background-color: $bg-color-3;
 }
 
 .light-scrollbar::-webkit-scrollbar-thumb {
   background-clip: padding-box;
-  border: 3px solid rgba(0,0,0,0);
+  border: 3px solid $border-color-2;
   border-radius: 6px;
   min-height: 36px;
 }

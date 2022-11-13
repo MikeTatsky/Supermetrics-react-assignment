@@ -1,8 +1,8 @@
 import React, { FC, useLayoutEffect } from 'react'
 import { observer } from 'mobx-react'
 
-import Login from './pages/Login/Login'
 import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
 
 import authStore from 'stores/authStore'
 
