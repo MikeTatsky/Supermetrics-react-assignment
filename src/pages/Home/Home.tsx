@@ -19,7 +19,7 @@ import styles from './Home.module.scss'
 
 const URL_GET_POSTS = 'https://api.supermetrics.com/assignment/posts'
 
-function preparePosts (posts: any[]): [string[], IPost[][]] {
+function preparePosts (posts: IPost[]): [string[], IPost[][]] {
   const usersWithPosts: {
     [key: string]: IPost[]
   } = {}
