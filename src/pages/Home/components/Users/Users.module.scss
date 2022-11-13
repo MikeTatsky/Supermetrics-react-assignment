@@ -1,0 +1,20 @@
+@import 'src/scss/vars';
+
+.container {
+  width: 228px;
+  border-right: 1px solid hsl(0,0%,88%);
+  padding-top: 10px;
+  overflow: auto;
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+.loading {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-3;
+}

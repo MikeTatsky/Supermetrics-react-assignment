@@ -1,0 +1,16 @@
+@import 'src/scss/vars';
+
+.container {
+  background: white;
+  border-color: $border-color-1;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.dashed {
+  border-style: dashed;
+}
+
+.rounded {
+  border-radius: 7px;
+}

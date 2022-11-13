@@ -1,0 +1,57 @@
+@import 'src/scss/vars';
+
+.container {
+  font-family: $font-family;
+  background: hsl(0,0%,99%);
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 3%) 0 2px 0 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1150px;
+  padding-right: 10px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.buttonsContainer {
+  margin-left: 58px;
+  display: flex;
+  gap: 10px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.separator {
+  height: 26px;
+  width: 1px;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-top: 3px;
+}
+
+.main-body {
+  height: calc(100% - 48px);
+  position: relative;
+  top: 48px;
+  margin: 0 auto;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: row;
+  z-index: 0;
+}

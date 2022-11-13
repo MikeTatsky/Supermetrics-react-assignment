@@ -1,0 +1,35 @@
+@import 'src/scss/vars';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  width: 320px;
+}
+
+.label {
+  font-size: 13px;
+  line-height: 16px;
+  font-family: $font-family;
+  margin-top: 0;
+  display: inline-block;
+  color: $color-2;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.fieldError {
+  input {
+    border: 1px solid red;
+  }
+}
+
+.error-input {
+  border: 1px solid red;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+  font-size: 12px;
+}

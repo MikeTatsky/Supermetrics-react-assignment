@@ -1,0 +1,41 @@
+@import 'vars';
+
+html, body, #root, .App {
+  height:100%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+.light-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.light-scrollbar::-webkit-scrollbar-thumb {
+  background-color: hsla(0,0%,0%,0.35);
+}
+
+.light-scrollbar::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border: 3px solid rgba(0,0,0,0);
+  border-radius: 6px;
+  min-height: 36px;
+}
+
+.animate {
+  transition: .085s all ease-in;
+}

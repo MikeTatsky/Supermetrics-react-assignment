@@ -1,0 +1,33 @@
+@import 'src/scss/vars';
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login {
+  width: 300px;
+
+  border-color: $border-color-1;
+  border-style: dashed;
+  border-width: 2px;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+}
+
+.fields-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 7px 107px 15px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}

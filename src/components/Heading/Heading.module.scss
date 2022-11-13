@@ -1,0 +1,23 @@
+@import 'src/scss/vars';
+
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 8px;
+  overflow-x: auto;
+  position: relative;
+}
+
+.h3 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: $font-family;
+  color: $color-1;
+}

@@ -1,0 +1,38 @@
+@import 'src/scss/vars';
+
+.container {
+  margin: 5px 5px 11px;
+  position: relative;
+  box-shadow: $box-shadow-2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-out 0s;
+
+  &:hover {
+    box-shadow: 0 0 0 2px rgb(0 0 0 / 25%);
+    .time {
+      border-bottom-color: #BDBDBD;
+    }
+  }
+}
+
+.time {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(77, 77, 77);
+  height: 25px;
+  line-height: 25px;
+  padding-left: 6px;
+  border-bottom: 2px solid #E2E2E2;
+  transition: box-bottom-color 0.15s ease-out 0s;
+}
+
+.message {
+  padding: 5px 5px 10px 5px;
+  text-indent: 7px;
+}
+
+.hidden {
+  display: none;
+}

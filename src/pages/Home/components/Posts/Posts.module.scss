@@ -1,0 +1,16 @@
+@import 'src/scss/vars';
+
+.container {
+  flex: 1;
+  overflow: auto;
+  padding-top: 10px;
+}
+
+.no-data {
+  opacity: .5;
+  font-weight: 500;
+  font-size: 14px;
+  color: $color-3;
+  padding: 10px;
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+@import 'src/scss/vars';
+
+.container {
+  box-shadow: $box-shadow-2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-out 0s;
+  margin: 5px 5px 11px;
+  display: flex;
+  line-height: 40px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.name {
+  flex: 1;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-3;
+}
+
+.num-messages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+
+.num-messages-inner {
+  background-color: rgb(233, 238, 249);
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(153, 153, 153);
+  height: 22px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-right: 4px;
+}

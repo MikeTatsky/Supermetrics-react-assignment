@@ -1,0 +1,61 @@
+@import 'src/scss/vars';
+
+.button {
+  font-family: $font-family;
+  border-radius: 3px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 500;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: none;
+  color: $color-1;
+  background-color: $bg-color-1;
+  font-size: 13px;
+  height: 32px;
+  min-width: 32px;
+  line-height: 21px;
+  display: inline-flex;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-1;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.selected {
+  box-shadow: $box-shadow-1;
+  background-color: $border-color-1;
+}
+
+.text {
+  border-radius: 3px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0 12px;
+  font-weight: 500;
+  user-select: none;
+  outline: none;
+  appearance: none;
+  border: none;
+  color: $color-1;
+  background-color: $bg-color-1;
+  font-size: 13px;
+  height: 28px;
+  line-height: 21px;
+  display: inline-flex;
+}
